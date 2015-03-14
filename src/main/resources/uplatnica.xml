@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns1:uplatnica xmlns:ns1="http://www.ftn.uns.ac.rs/uplatnica"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.ftn.uns.ac.rs/uplatnica uplatnica.xsd">
+    <uplatilac>
+        <pravnoLice>
+            <naziv>Firma A</naziv>
+            <adresa>
+                <ulica>Trg Neznanog junaka</ulica>
+                <broj>5</broj>
+                <grad>Beograd</grad>
+            </adresa>
+            <registarskiBroj>10264235628</registarskiBroj>
+        </pravnoLice>
+    </uplatilac>
+    <primalac>
+        <pravnoLice>
+            <naziv>Firma B</naziv>
+            <adresa>
+                <ulica>Bulevar Kralja Petra</ulica>
+                <broj>45</broj>
+                <grad>Novi Sad</grad>
+            </adresa>
+            <registarskiBroj>10945125874</registarskiBroj>
+        </pravnoLice>
+    </primalac>
+    <nalog>
+        <sifra>123</sifra>
+        <valuta>RSD</valuta>
+        <iznos>150000</iznos>
+        <racun>
+            <broj>340-123456-78</broj>
+            <model>97</model>
+            <poziv>83-536</poziv>
+        </racun>
+    </nalog>
+</ns1:uplatnica>

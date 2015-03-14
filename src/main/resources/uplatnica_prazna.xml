@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns1:uplatnica xmlns:ns1="http://www.ftn.uns.ac.rs/uplatnica"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.ftn.uns.ac.rs/uplatnica uplatnica.xsd">
+    <uplatilac>
+        <pravnoLice>
+            <naziv></naziv>
+            <adresa>
+                <ulica></ulica>
+                <broj></broj>
+                <grad></grad>
+            </adresa>
+            <registarskiBroj></registarskiBroj>
+        </pravnoLice>
+    </uplatilac>
+    <primalac>
+        <pravnoLice>
+            <naziv></naziv>
+            <adresa>
+                <ulica></ulica>
+                <broj></broj>
+                <grad></grad>
+            </adresa>
+            <registarskiBroj></registarskiBroj>
+        </pravnoLice>
+    </primalac>
+    <nalog>
+        <sifra></sifra>
+        <valuta></valuta>
+        <iznos></iznos>
+        <racun>
+            <broj></broj>
+            <model></model>
+            <poziv></poziv>
+        </racun>
+    </nalog>
+</ns1:uplatnica>

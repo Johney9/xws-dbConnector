@@ -64,7 +64,7 @@
 			</classes>
 			
 			<lib dir="${lib.dir}">
-				<include name=""/>
+				<include name="**/*.jar"/>
 			</lib>
 			
 			<webinf dir="${webinf.dir}">

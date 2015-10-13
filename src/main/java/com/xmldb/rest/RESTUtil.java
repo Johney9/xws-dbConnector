@@ -36,9 +36,20 @@ public class RESTUtil {
 		return responseCode;
 	}
 	
+	public static int getSchema(String schemaName) throws Exception {
+		System.out.println("=== GET: get schema: " + schemaName + " ===");
+		URL url = new URL(REST_URL + schemaName);
+		HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+		conn.setDoOutput(true);
+		conn.setRequestMethod(RequestMethod.GET);
+		int responseCode = printResponse(conn);
+		conn.disconnect();
+		return responseCode;
+	}
+	
 	public static int createResource(String schemaName, String resourceId, InputStream resource) throws Exception {
 		System.out.println("=== PUT: create a new resource: " + resourceId + " in database: " + schemaName + " ===");
-		URL url = new URL(REST_URL + schemaName + "/" + resourceId + "?chop=false");
+		URL url = new URL(REST_URL + schemaName + "/" + resourceId);
 		HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 		conn.setDoOutput(true);
 		conn.setRequestMethod(RequestMethod.PUT);
@@ -68,6 +79,7 @@ public class RESTUtil {
 			fileName+=".xml";
 		}
 		String query = functionName+schemaName+"/"+fileName+functionEnd;
+		System.err.println("QUERY: "+query);
 		//return retrieveSpecificResourceStandalone(query, schemaName, "UTF-8", true, true);
 		return retrieveSpecificResourceStandalone(query, schemaName, "UTF-8", true, false);
 		
